@@ -6,6 +6,7 @@ Dit was een schoolproject die ik in **mei 2014** heb gedaan.
 [Bekijk hier de demo](https://monteurswebsite.000webhostapp.com/)
 
 E-mail: h.teker@live.nl
+
 Wachtwoord: 123456
 
 ## Doel
