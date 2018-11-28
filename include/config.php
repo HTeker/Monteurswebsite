@@ -8,6 +8,8 @@ try{
     $db = new PDO("pgsql:host={$host};port={$port};dbname={$path}", $user, $pass);
     $db->setAttribute(PDO::ATTR_ERRMODE,
         PDO::ERRMODE_WARNING);
+    $sql = file_get_contents("../database/monteur.sql");
+    $db->exec($sql);
 }catch (PDOException $error)
 {
 
