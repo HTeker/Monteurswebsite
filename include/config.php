@@ -9,7 +9,8 @@ try{
     $db->setAttribute(PDO::ATTR_ERRMODE,
         PDO::ERRMODE_WARNING);
     $sql = file_get_contents("../database/monteur.sql");
-    $db->exec($sql);
+    $initialize_db = $db->prepare($sql);
+    $initialize_db->execute();
 }catch (PDOException $error)
 {
 
